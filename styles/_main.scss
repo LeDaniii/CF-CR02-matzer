@@ -1,0 +1,27 @@
+.head {
+  @include flex(space-between, center, row);
+  background: #5b191a;
+  img {
+    padding: 2rem;
+  }
+}
+
+nav {
+  @include flex(flex-start, center, row);
+  background: black;
+  ul {
+    @include flex(flex-start, center, row);
+    font-size: 1.8rem;
+    list-style: none;
+    a {
+      padding: 0.5rem 0rem 0.5rem 2rem;
+    }
+  }
+}
+
+.time {
+  @include flex(flex-end, center, row);
+  p {
+    margin: 0.6rem 1rem 0.6rem 0;
+  }
+}
