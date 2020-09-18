@@ -11,7 +11,8 @@
       margin: 0.5rem 0rem 0.5rem 1rem;
     }
   }
-  .topNewsImg {
+  .topNewsImg,
+  .popularImg {
     width: 100%;
     @include flex(space-between, center, row);
     flex-flow: wrap;
@@ -38,6 +39,31 @@
         position: absolute;
         pointer-events: none;
       }
+    }
+  }
+  .picture2 {
+    width: 30%;
+    position: relative;
+    @include flex(flex-end, center, column);
+    a {
+      @include flex(flex-end, center, column);
+      overflow: hidden;
+    }
+    img {
+      z-index: 1;
+      width: 120%;
+    }
+    .text {
+      @include flex(center, center, row);
+      height: 10vh;
+      z-index: 2;
+      background: black;
+      color: white;
+      text-align: center;
+      width: 100%;
+      opacity: 80%;
+      position: absolute;
+      pointer-events: none;
     }
   }
 }

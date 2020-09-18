@@ -27,7 +27,8 @@
   margin: 0.5rem 0rem 0.5rem 1rem;
 }
 
-.news .topNewsImg {
+.news .topNewsImg,
+.news .popularImg {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +47,8 @@
       flex-flow: wrap;
 }
 
-.news .topNewsImg .picture {
+.news .topNewsImg .picture,
+.news .popularImg .picture {
   width: 30%;
   position: relative;
   display: -webkit-box;
@@ -64,7 +66,8 @@
           flex-direction: column;
 }
 
-.news .topNewsImg .picture a {
+.news .topNewsImg .picture a,
+.news .popularImg .picture a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,12 +83,79 @@
           flex-direction: column;
 }
 
-.news .topNewsImg .picture img {
+.news .topNewsImg .picture img,
+.news .popularImg .picture img {
   z-index: 1;
   width: 100%;
 }
 
-.news .topNewsImg .picture .text {
+.news .topNewsImg .picture .text,
+.news .popularImg .picture .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 10vh;
+  z-index: 2;
+  background: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  opacity: 80%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.news .picture2 {
+  width: 30%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.news .picture2 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.news .picture2 img {
+  z-index: 1;
+  width: 120%;
+}
+
+.news .picture2 .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
