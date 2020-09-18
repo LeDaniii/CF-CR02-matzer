@@ -41,6 +41,7 @@
       }
     }
   }
+  //   picture from Elon ---> had do increase the size and crop it with overflow
   .picture2 {
     width: 30%;
     position: relative;
@@ -64,6 +65,70 @@
       opacity: 80%;
       position: absolute;
       pointer-events: none;
+    }
+  }
+}
+
+//   ----- Advertisement Seczion -----
+
+.advertisement {
+  width: 95%;
+  margin: auto;
+
+  .advertisementBanner {
+    @include flex(center, center, row);
+    width: 100%;
+    margin: 2rem;
+    img {
+      width: 80%;
+    }
+  }
+  .advertisementImg {
+    width: 100%;
+    height: 100vh;
+    border: 4px black solid;
+    @include flex(space-between, center, row);
+    flex-flow: wrap;
+    .advertisementwrapper1 {
+      @include flex(space-between, center, row);
+      flex-flow: wrap;
+      width: 70%;
+      background: chartreuse;
+    }
+    .picture {
+      width: 30%;
+      position: relative;
+      @include flex(flex-end, center, column);
+      a {
+        @include flex(flex-end, center, column);
+      }
+      img {
+        z-index: 1;
+        width: 100%;
+      }
+      .text {
+        @include flex(center, center, row);
+        height: 10vh;
+        z-index: 2;
+        background: black;
+        color: white;
+        text-align: center;
+        width: 100%;
+        opacity: 80%;
+        position: absolute;
+        pointer-events: none;
+      }
+    }
+    .picture3 {
+      background: cadetblue;
+      @include flex(flex-end, center, row);
+
+      a {
+        @include flex(flex-end, center, row);
+      }
+      img {
+        width: 184%;
+      }
     }
   }
 }
