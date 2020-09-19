@@ -1,0 +1,55 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  @include flex(flex-start, center, column);
+  background: darkgrey;
+  h1 {
+    font-size: 4rem;
+    padding: 6rem;
+  }
+}
+
+.animate {
+  width: 800px;
+  height: 800px;
+  background: lightgray;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  box-shadow: 3px 3px 20px 8px black;
+  &:hover {
+    background: linear-gradient(45deg, #205b9e, #ec407a);
+    rotate: 180deg;
+    border-radius: 50%;
+    transition: all 2s;
+  }
+  .elipse {
+    width: 200px;
+    height: 100px;
+    /* position: relative; */
+    margin-top: 20%;
+    transform: rotate(45deg) translateY(-750%) translateX(-55%);
+    background: darkgrey;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 20px 8px;
+  }
+  .big {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: 60%;
+    margin-top: 20%;
+    background: darkgrey;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 20px 8px;
+  }
+  .small {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: 20%;
+    margin-top: 20%;
+    background: darkgrey;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 20px 8px;
+  }
+}

@@ -1,0 +1,15 @@
+nav {
+  font-size: 2rem;
+  background: #205b9e;
+  padding: 2rem;
+  @include flex(space-between, center, row);
+  ul {
+    @include flex(space-around, center, row);
+    li {
+      list-style: none;
+      a {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
