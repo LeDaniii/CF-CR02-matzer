@@ -200,8 +200,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
   margin: 2rem auto 2rem auto;
+}
+
+.advertisement .advertisementBanner a {
+  width: 80%;
 }
 
 .advertisement .advertisementBanner img {
@@ -419,6 +422,7 @@
 }
 
 .head img {
+  width: 100%;
   padding: 2rem;
 }
 
@@ -707,7 +711,7 @@ a {
 
 @media screen and (max-width: 480px) {
   footer {
-    height: 20vh;
+    height: 35vh;
   }
   footer .list {
     margin: 3rem auto 0 auto;
@@ -745,6 +749,12 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .head {
+    background: crimson;
   }
 }
 /*# sourceMappingURL=style.css.map */

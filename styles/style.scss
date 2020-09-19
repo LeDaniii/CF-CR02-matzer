@@ -1,3 +1,4 @@
+// ------ FlexBox for faster writing -----
 @mixin flex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
@@ -5,8 +6,22 @@
   flex-direction: $direction;
 }
 
+// ------ Import Sass ------
 @import "./main";
 @import "./nav";
 @import "./footer";
 @import "./global";
 @import "./mobile";
+@import "./tablet";
+
+// QickNotes
+// There are tags with flexbox property i would not use anymore
+// for example the div was not aligned with the picture
+// because i did not know because pictures are inline-elements
+// they have a little bit of space underneath so they
+// don't align with a "p, q or y"
+// would i have used display: block it would solve a lot of problems at ones.
+
+// !!Media Query for tablets!!
+// The site is such responsive it doesn't really
+// need a extra Query for that however it will change the header color on tablet size

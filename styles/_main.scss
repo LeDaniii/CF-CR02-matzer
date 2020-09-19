@@ -1,7 +1,9 @@
+// --------- MainPage Sized to 95% of screen --------
 .news {
   width: 95%;
   margin: auto;
   .banner {
+    //   ----- 2x Banner grey -- Top News -- Popular -----
     width: 100%;
     background: #c4c4c4;
     margin: 1rem 0 2rem 0;
@@ -11,6 +13,7 @@
       margin: 0.5rem 0rem 0.5rem 1rem;
     }
   }
+  //   ----- Imgs -- Top News -- Popular -----
   .topNewsImg,
   .popularImg {
     width: 100%;
@@ -72,7 +75,19 @@
   }
 }
 
-//   ----- Advertisement Section -----
+//   ---------- Advertisement Section ----------
+
+// Section where i compleatly failed
+// I tried to get everything in line
+// The Layout was ok but my right banner
+// was always overflowing when i scaled it up
+// used flex column than on 3 different wrapper
+// advertisementwrapper1 -- advertisementwrapper2 --picture3
+// it scales quiet ok-ish but it is not aligned correctly
+// also because of this decision the mobile version looks like crap
+// I will let it like this and focus on other stuff
+// to gain points--I know what's wrong there but have no
+// time to fix it anymore
 
 .advertisement {
   width: 95%;
@@ -80,8 +95,10 @@
 
   .advertisementBanner {
     @include flex(center, center, column);
-    width: 80%;
     margin: 2rem auto 2rem auto;
+    a {
+      width: 80%;
+    }
     img {
       width: 100%;
     }
@@ -159,14 +176,6 @@
   }
 }
 // List of Pain
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //     .advertisementwrapper1 {

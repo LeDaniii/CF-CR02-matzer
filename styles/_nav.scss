@@ -1,11 +1,14 @@
+// --------- Header above the Navbar ---------
 .head {
   @include flex(space-between, center, row);
   background: #5b191a;
   img {
+    width: 100%;
     padding: 2rem;
   }
 }
 
+// --------- Navbar ---------
 nav {
   @include flex(flex-start, center, row);
   background: black;
@@ -19,6 +22,7 @@ nav {
   }
 }
 
+// --------- time under navbar ---------
 .time {
   @include flex(flex-end, center, row);
   p {
