@@ -19,29 +19,29 @@
     #wideDisplayNone {
       display: none;
     }
-    .picture {
-      width: 30%;
-      position: relative;
+  }
+  .picture {
+    width: 30%;
+    position: relative;
+    @include flex(flex-end, center, column);
+    a {
       @include flex(flex-end, center, column);
-      a {
-        @include flex(flex-end, center, column);
-      }
-      img {
-        z-index: 1;
-        width: 100%;
-      }
-      .text {
-        @include flex(center, center, row);
-        height: 45%;
-        z-index: 2;
-        background: black;
-        color: white;
-        text-align: center;
-        width: 100%;
-        opacity: 80%;
-        position: absolute;
-        pointer-events: none;
-      }
+    }
+    img {
+      z-index: 1;
+      width: 100%;
+    }
+    .text {
+      @include flex(center, center, row);
+      height: 45%;
+      z-index: 2;
+      background: black;
+      color: white;
+      text-align: center;
+      width: 100%;
+      opacity: 80%;
+      position: absolute;
+      pointer-events: none;
     }
   }
   //   picture from Elon ---> had do increase the size and crop it with overflow
