@@ -16,6 +16,9 @@
     width: 100%;
     @include flex(space-between, center, row);
     flex-flow: wrap;
+    #wideDisplayNone {
+      display: none;
+    }
     .picture {
       width: 30%;
       position: relative;
