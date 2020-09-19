@@ -104,7 +104,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 10vh;
+  height: 45%;
   z-index: 2;
   background: black;
   color: white;
@@ -169,7 +169,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 10vh;
+  height: 45%;
   z-index: 2;
   background: black;
   color: white;
@@ -299,7 +299,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 10vh;
+  height: 45%;
   z-index: 2;
   background: black;
   color: white;
@@ -381,7 +381,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 10vh;
+  height: 45%;
   z-index: 2;
   background: black;
   color: white;
@@ -575,5 +575,48 @@ footer .footerText p {
 
 a {
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    height: 20vh;
+  }
+  footer .list {
+    margin: 3rem auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer ul {
+    font-size: 1.4rem;
+  }
+  footer ul a {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+  }
+  footer .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 /*# sourceMappingURL=style.css.map */

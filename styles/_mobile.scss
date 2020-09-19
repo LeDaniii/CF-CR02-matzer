@@ -1,0 +1,19 @@
+// ---------- Footer Section ---------
+@media screen and (max-width: 480px) {
+  footer {
+    height: 20vh;
+    .list {
+      margin: 3rem auto 0 auto;
+      @include flex(center, center, row);
+    }
+    ul {
+      font-size: 1.4rem;
+      a {
+        padding: 0.8rem 0.8rem 0 0.8rem;
+      }
+    }
+    .logo {
+      @include flex(center, center, row);
+    }
+  }
+}

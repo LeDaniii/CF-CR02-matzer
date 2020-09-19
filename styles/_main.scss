@@ -29,7 +29,7 @@
       }
       .text {
         @include flex(center, center, row);
-        height: 10vh;
+        height: 45%;
         z-index: 2;
         background: black;
         color: white;
@@ -56,7 +56,7 @@
     }
     .text {
       @include flex(center, center, row);
-      height: 10vh;
+      height: 45%;
       z-index: 2;
       background: black;
       color: white;
@@ -107,7 +107,7 @@
       }
       .text {
         @include flex(center, center, column);
-        height: 10vh;
+        height: 45%;
         z-index: 2;
         background: black;
         color: white;
@@ -136,7 +136,7 @@
       }
       .text {
         @include flex(center, center, row);
-        height: 10vh;
+        height: 45%;
         z-index: 2;
         background: black;
         color: white;
@@ -156,7 +156,7 @@
     }
   }
 }
-//
+// List of Pain
 //
 //
 //
